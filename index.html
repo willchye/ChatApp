@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+    <meta charset="utf-8">
+	<title>room[ease] chatroom</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/js/script.js"></script>
+
+</head>
+<body>
+
+<video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="300" height="150">
+<source src="css/fotolia.mp4" type="video/mp4">
+  </video>
+
+<div class="box">
+
+<!-- jumbotron header -->
+<!-- <div class="bahhhh">
+
+    <i id=slogan>Connect.Me</i><br>
+
+
+    <span id=profile>
+
+</div> -->
+
+
+
+<div class="modal-1 animate" id="userFormArea">
+
+	<div id="userFormArea" class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+		<h1 id=title>Connect Chatroom</h1>
+		<form id="userForm">
+				<div class="form-group">
+					<label>Username</label>
+					<input class="form-control" id="username" required/>
+					<br>
+					<input type="submit" class="btn btn-primary" id="userLogin" value="Login"/>
+				</div>
+			</form>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</div>
+
+<!-- actual chat -->
+
+
+
+
+
+
+
+
+
+
+<div id="messageArea" >
+	<div class="col-md-2" id=sidebar>
+  
+
+    <div class="row">
+        <div class="col-md-10">
+            <div class="online">
+            	<h3 id="online">Online Users</h3>
+			<ul class="list-group" id="users"></ul>
+                 
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="online">
+                
+               
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+<!-- 
+
+	<div id="onlineBox">
+		<div class="box3">
+			<h3 id="online">Online Users</h3>
+			<ul class="list-group" id="users"></ul>
+		</div>
+	</div> -->
+
+
+
+	<div id="mainchatSection">
+
+		<div class="box2">
+			<div class="chat" id="chat">
+			</div>
+
+			<form id="messageForm">
+				<div class="form-group">
+					<input class="form-control" id="message"/>
+					<br />
+					<input type="submit" class="btn btn-primary" id="messageBtn" value="Send Message" />
+				</div>
+			</form>
+		</div>
+	</div>
+
+</div>
+	
+</div>
+</body>
+</html>
